@@ -1,4 +1,5 @@
-The ring buffer allows user to either override data that were not read or throw a "Buffer Overflow" error when trying to override a data that are not already processed.
+
+A good explanation of ring buffer can be found in this wiki page :https://en.wikipedia.org/wiki/Circular_buffer
 
 Install
 
@@ -7,6 +8,7 @@ git clone https://github.com/hamdijmii1992/ringBuffer
 run tests:
 
 cd ringBuffer
+
 go test
 
 Example:
@@ -31,5 +33,8 @@ func main() {
 }
 
 Youtube : https://www.youtube.com/watch?v=GbBrp6K7IvM
+
+This ring buffer allows user to either override data or throw a "Buffer Overflow" error when trying to write in a place that are 
+not read
 
 To be done: enable Ring buffer to accept any type of data other than bytes
